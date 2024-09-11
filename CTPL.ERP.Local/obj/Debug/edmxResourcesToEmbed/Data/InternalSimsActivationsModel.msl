@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ERP_LocalModelStoreContainer" CdmEntityContainer="ERP_LocalEntities">
+    <EntitySetMapping Name="Internal_Sims_Activations">
+      <EntityTypeMapping TypeName="ERP_LocalModel.Internal_Sims_Activations">
+        <MappingFragment StoreEntitySet="Internal_Sims_Activations">
+          <ScalarProperty Name="ICCID_1" ColumnName="ICCID_1" />
+          <ScalarProperty Name="ICCID_2" ColumnName="ICCID_2" />
+          <ScalarProperty Name="ICCID_1_Network" ColumnName="ICCID_1_Network" />
+          <ScalarProperty Name="ICCID_2_Network" ColumnName="ICCID_2_Network" />
+          <ScalarProperty Name="IMSI_1" ColumnName="IMSI_1" />
+          <ScalarProperty Name="IMSI_2" ColumnName="IMSI_2" />
+          <ScalarProperty Name="MSISDN_1" ColumnName="MSISDN_1" />
+          <ScalarProperty Name="MSISDN_2" ColumnName="MSISDN_2" />
+          <ScalarProperty Name="ESN" ColumnName="ESN" />
+          <ScalarProperty Name="BootstrapActivationStartDate" ColumnName="BootstrapActivationStartDate" />
+          <ScalarProperty Name="BootstrapActivationEndDate" ColumnName="BootstrapActivationEndDate" />
+          <ScalarProperty Name="AllocatedToInHouseDate" ColumnName="AllocatedToInHouseDate" />
+          <ScalarProperty Name="APN_Name" ColumnName="APN_Name" />
+          <ScalarProperty Name="IP_1" ColumnName="IP_1" />
+          <ScalarProperty Name="IP_2" ColumnName="IP_2" />
+          <ScalarProperty Name="IP_3" ColumnName="IP_3" />
+          <ScalarProperty Name="IP_4" ColumnName="IP_4" />
+          <ScalarProperty Name="MN_1" ColumnName="MN_1" />
+          <ScalarProperty Name="MN_2" ColumnName="MN_2" />
+          <ScalarProperty Name="MN_3" ColumnName="MN_3" />
+          <ScalarProperty Name="MN_4" ColumnName="MN_4" />
+          <ScalarProperty Name="IMEI" ColumnName="IMEI" />
+          <ScalarProperty Name="For_User" ColumnName="For_User" />
+          <ScalarProperty Name="For_State" ColumnName="For_State" />
+          <ScalarProperty Name="Dispatch_Date" ColumnName="Dispatch_Date" />
+          <ScalarProperty Name="Dispatch_Location" ColumnName="Dispatch_Location" />
+          <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,145 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="ERP_LocalModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Internal_Sims_Activations">
+          <Key>
+            <PropertyRef Name="ICCID_1" />
+          </Key>
+          <Property Name="ICCID_1" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="ICCID_2" Type="varchar" MaxLength="20" />
+          <Property Name="ICCID_1_Network" Type="varchar" MaxLength="255" />
+          <Property Name="ICCID_2_Network" Type="varchar" MaxLength="255" />
+          <Property Name="IMSI_1" Type="bigint" />
+          <Property Name="IMSI_2" Type="bigint" />
+          <Property Name="MSISDN_1" Type="bigint" />
+          <Property Name="MSISDN_2" Type="bigint" />
+          <Property Name="ESN" Type="varchar" MaxLength="255" />
+          <Property Name="BootstrapActivationStartDate" Type="date" />
+          <Property Name="BootstrapActivationEndDate" Type="date" />
+          <Property Name="AllocatedToInHouseDate" Type="date" />
+          <Property Name="APN_Name" Type="varchar" MaxLength="255" />
+          <Property Name="IP_1" Type="varchar" MaxLength="45" />
+          <Property Name="IP_2" Type="varchar" MaxLength="45" />
+          <Property Name="IP_3" Type="varchar" MaxLength="45" />
+          <Property Name="IP_4" Type="varchar" MaxLength="45" />
+          <Property Name="MN_1" Type="varchar" MaxLength="255" />
+          <Property Name="MN_2" Type="varchar" MaxLength="255" />
+          <Property Name="MN_3" Type="varchar" MaxLength="255" />
+          <Property Name="MN_4" Type="varchar" MaxLength="255" />
+          <Property Name="IMEI" Type="varchar" MaxLength="255" />
+          <Property Name="For_User" Type="varchar" MaxLength="255" />
+          <Property Name="For_State" Type="varchar" MaxLength="255" />
+          <Property Name="Dispatch_Date" Type="date" />
+          <Property Name="Dispatch_Location" Type="varchar" MaxLength="255" />
+          <Property Name="Remarks" Type="varchar" MaxLength="255" />
+        </EntityType>
+        <EntityContainer Name="ERP_LocalModelStoreContainer">
+          <EntitySet Name="Internal_Sims_Activations" EntityType="Self.Internal_Sims_Activations" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="ERP_LocalModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Internal_Sims_Activations">
+          <Key>
+            <PropertyRef Name="ICCID_1" />
+          </Key>
+          <Property Name="ICCID_1" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="ICCID_2" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="ICCID_1_Network" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="ICCID_2_Network" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="IMSI_1" Type="Int64" />
+          <Property Name="IMSI_2" Type="Int64" />
+          <Property Name="MSISDN_1" Type="Int64" />
+          <Property Name="MSISDN_2" Type="Int64" />
+          <Property Name="ESN" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="BootstrapActivationStartDate" Type="DateTime" Precision="0" />
+          <Property Name="BootstrapActivationEndDate" Type="DateTime" Precision="0" />
+          <Property Name="AllocatedToInHouseDate" Type="DateTime" Precision="0" />
+          <Property Name="APN_Name" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="IP_1" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+          <Property Name="IP_2" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+          <Property Name="IP_3" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+          <Property Name="IP_4" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+          <Property Name="MN_1" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="MN_2" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="MN_3" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="MN_4" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="IMEI" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="For_User" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="For_State" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="Dispatch_Date" Type="DateTime" Precision="0" />
+          <Property Name="Dispatch_Location" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="Remarks" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityContainer Name="ERP_LocalEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Internal_Sims_Activations" EntityType="Self.Internal_Sims_Activations" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="ERP_LocalModelStoreContainer" CdmEntityContainer="ERP_LocalEntities">
+          <EntitySetMapping Name="Internal_Sims_Activations">
+            <EntityTypeMapping TypeName="ERP_LocalModel.Internal_Sims_Activations">
+              <MappingFragment StoreEntitySet="Internal_Sims_Activations">
+                <ScalarProperty Name="ICCID_1" ColumnName="ICCID_1" />
+                <ScalarProperty Name="ICCID_2" ColumnName="ICCID_2" />
+                <ScalarProperty Name="ICCID_1_Network" ColumnName="ICCID_1_Network" />
+                <ScalarProperty Name="ICCID_2_Network" ColumnName="ICCID_2_Network" />
+                <ScalarProperty Name="IMSI_1" ColumnName="IMSI_1" />
+                <ScalarProperty Name="IMSI_2" ColumnName="IMSI_2" />
+                <ScalarProperty Name="MSISDN_1" ColumnName="MSISDN_1" />
+                <ScalarProperty Name="MSISDN_2" ColumnName="MSISDN_2" />
+                <ScalarProperty Name="ESN" ColumnName="ESN" />
+                <ScalarProperty Name="BootstrapActivationStartDate" ColumnName="BootstrapActivationStartDate" />
+                <ScalarProperty Name="BootstrapActivationEndDate" ColumnName="BootstrapActivationEndDate" />
+                <ScalarProperty Name="AllocatedToInHouseDate" ColumnName="AllocatedToInHouseDate" />
+                <ScalarProperty Name="APN_Name" ColumnName="APN_Name" />
+                <ScalarProperty Name="IP_1" ColumnName="IP_1" />
+                <ScalarProperty Name="IP_2" ColumnName="IP_2" />
+                <ScalarProperty Name="IP_3" ColumnName="IP_3" />
+                <ScalarProperty Name="IP_4" ColumnName="IP_4" />
+                <ScalarProperty Name="MN_1" ColumnName="MN_1" />
+                <ScalarProperty Name="MN_2" ColumnName="MN_2" />
+                <ScalarProperty Name="MN_3" ColumnName="MN_3" />
+                <ScalarProperty Name="MN_4" ColumnName="MN_4" />
+                <ScalarProperty Name="IMEI" ColumnName="IMEI" />
+                <ScalarProperty Name="For_User" ColumnName="For_User" />
+                <ScalarProperty Name="For_State" ColumnName="For_State" />
+                <ScalarProperty Name="Dispatch_Date" ColumnName="Dispatch_Date" />
+                <ScalarProperty Name="Dispatch_Location" ColumnName="Dispatch_Location" />
+                <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

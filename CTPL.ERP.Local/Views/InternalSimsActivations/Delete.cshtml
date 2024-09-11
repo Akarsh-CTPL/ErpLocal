@@ -1,0 +1,225 @@
+﻿@model CTPL.ERP.Local.Data.Internal_Sims_Activations
+
+@{
+    ViewBag.Title = "Delete";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Internal_Sims_Activations</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.ICCID_2)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ICCID_2)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ICCID_1_Network)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ICCID_1_Network)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ICCID_2_Network)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ICCID_2_Network)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IMSI_1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IMSI_1)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IMSI_2)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IMSI_2)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MSISDN_1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MSISDN_1)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MSISDN_2)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MSISDN_2)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ESN)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ESN)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BootstrapActivationStartDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BootstrapActivationStartDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BootstrapActivationEndDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BootstrapActivationEndDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AllocatedToInHouseDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AllocatedToInHouseDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.APN_Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.APN_Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IP_1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IP_1)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IP_2)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IP_2)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IP_3)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IP_3)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IP_4)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IP_4)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MN_1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MN_1)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MN_2)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MN_2)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MN_3)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MN_3)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MN_4)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MN_4)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IMEI)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IMEI)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.For_User)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.For_User)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.For_State)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.For_State)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Dispatch_Date)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Dispatch_Date)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Dispatch_Location)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Dispatch_Location)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

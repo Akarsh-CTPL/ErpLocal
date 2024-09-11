@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ERP_LocalModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Internal_Sims_Activations">
+    <Key>
+      <PropertyRef Name="ICCID_1" />
+    </Key>
+    <Property Name="ICCID_1" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ICCID_2" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="ICCID_1_Network" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="ICCID_2_Network" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="IMSI_1" Type="Int64" />
+    <Property Name="IMSI_2" Type="Int64" />
+    <Property Name="MSISDN_1" Type="Int64" />
+    <Property Name="MSISDN_2" Type="Int64" />
+    <Property Name="ESN" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="BootstrapActivationStartDate" Type="DateTime" Precision="0" />
+    <Property Name="BootstrapActivationEndDate" Type="DateTime" Precision="0" />
+    <Property Name="AllocatedToInHouseDate" Type="DateTime" Precision="0" />
+    <Property Name="APN_Name" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="IP_1" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+    <Property Name="IP_2" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+    <Property Name="IP_3" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+    <Property Name="IP_4" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+    <Property Name="MN_1" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="MN_2" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="MN_3" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="MN_4" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="IMEI" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="For_User" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="For_State" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Dispatch_Date" Type="DateTime" Precision="0" />
+    <Property Name="Dispatch_Location" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Remarks" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityContainer Name="ERP_LocalEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Internal_Sims_Activations" EntityType="Self.Internal_Sims_Activations" />
+  </EntityContainer>
+</Schema>

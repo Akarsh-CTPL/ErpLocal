@@ -1,0 +1,224 @@
+﻿@model IEnumerable<CTPL.ERP.Local.Data.Internal_Sims_Activations>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<style>
+    #customers {
+        font-family: Arial, Helvetica, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+        #customers td, #customers th {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+
+        #customers tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        #customers tr:hover {
+            background-color: #ddd;
+        }
+
+        #customers th {
+            padding-top: 12px;
+            padding-bottom: 12px;
+            text-align: left;
+            background-color: #4e2d87;
+            color: white;
+        }
+  
+</style>
+
+
+<h2>InternalSumsActivations</h2>
+
+<form action="@Url.Action("ExportToExcel", "FileUpload")" method="get">
+    <button type="submit" class="btn btn-success">Export to Excel</button>
+</form>
+
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+    Add
+</button>
+
+
+
+<!-- Search Form -->
+<form method="get" action="@Url.Action("Index")" class="form-inline">
+    <div class="form-group">
+        <label for="searchBy">Search By:</label>
+        <select id="searchBy" name="searchBy" class="form-control">
+            <option value="ICCID_1" @(ViewBag.CurrentSearchBy == "ICCID_1" ? "selected" : "")>ICCID_1</option>
+            <option value="ICCID_2" @(ViewBag.CurrentSearchBy == "ICCID_2" ? "selected" : "")>ICCID_2</option>
+            <option value="ICCID_1_Network" @(ViewBag.CurrentSearchBy == "ICCID_1_Network" ? "selected" : "")>ICCID_1_Network</option>
+            <option value="ICCID_2_Network" @(ViewBag.CurrentSearchBy == "ICCID_2_Network" ? "selected" : "")>ICCID_2_Network</option>
+            <option value="IMSI_1" @(ViewBag.CurrentSearchBy == "IMSI_1" ? "selected" : "")>IMSI_1</option>
+            <option value="IMSI_2" @(ViewBag.CurrentSearchBy == "IMSI_2" ? "selected" : "")>IMSI_2</option>
+            <option value="MSISDN_1" @(ViewBag.CurrentSearchBy == "MSISDN_1" ? "selected" : "")>MSISDN_1</option>
+            <option value="MSISDN_2" @(ViewBag.CurrentSearchBy == "MSISDN_2" ? "selected" : "")>MSISDN_2</option>
+            <option value="ESN" @(ViewBag.CurrentSearchBy == "ESN" ? "selected" : "")>ESN</option>
+            <option value="BootstrapActivationStartDate" @(ViewBag.CurrentSearchBy == "BootstrapActivationStartDate" ? "selected" : "")>BootstrapActivationStartDate</option>
+            <option value="BootstrapActivationEndDate" @(ViewBag.CurrentSearchBy == "BootstrapActivationEndDate" ? "selected" : "")>BootstrapActivationEndDate</option>
+            <option value="AllocatedToInHouseDate" @(ViewBag.CurrentSearchBy == "AllocatedToInHouseDate" ? "selected" : "")>AllocatedToInHouseDate</option>
+            <option value="APN_Name" @(ViewBag.CurrentSearchBy == "APN_Name" ? "selected" : "")>APN_Name</option>
+            <option value="IP_1" @(ViewBag.CurrentSearchBy == "IP_1" ? "selected" : "")>IP_1</option>
+            <option value="IP_2" @(ViewBag.CurrentSearchBy == "IP_2" ? "selected" : "")>IP_2</option>
+            <option value="IP_3" @(ViewBag.CurrentSearchBy == "IP_3" ? "selected" : "")>IP_3</option>
+            <option value="IP_4" @(ViewBag.CurrentSearchBy == "IP_4" ? "selected" : "")>IP_4</option>
+            <option value="MN_1" @(ViewBag.CurrentSearchBy == "MN_1" ? "selected" : "")>MN_1</option>
+            <option value="MN_2" @(ViewBag.CurrentSearchBy == "MN_2" ? "selected" : "")>MN_2</option>
+            <option value="MN_3" @(ViewBag.CurrentSearchBy == "MN_3" ? "selected" : "")>MN_3</option>
+            <option value="MN_4" @(ViewBag.CurrentSearchBy == "MN_4" ? "selected" : "")>MN_4</option>
+            <option value="IMEI" @(ViewBag.CurrentSearchBy == "IMEI" ? "selected" : "")>IMEI</option>
+            <option value="For_User" @(ViewBag.CurrentSearchBy == "For_User" ? "selected" : "")>For_User</option>
+            <option value="For_State" @(ViewBag.CurrentSearchBy == "For_State" ? "selected" : "")>For_State</option>
+            <option value="Dispatch_Date" @(ViewBag.CurrentSearchBy == "Dispatch_Date" ? "selected" : "")>Dispatch_Date</option>
+            <option value="Dispatch_Location" @(ViewBag.CurrentSearchBy == "Dispatch_Location" ? "selected" : "")>Dispatch_Location</option>
+
+        </select>
+    </div>
+    <div class="form-group">
+        <input type="text" id="searchKeyword" name="searchKeyword" value="@ViewBag.CurrentSearchKeyword" class="form-control" placeholder="Enter keyword" />
+    </div>
+    <button type="submit" class="btn btn-primary">Search</button>
+</form>
+
+
+
+
+
+
+
+<div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="excelModalLabel">Upload and View Excel File</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    @Html.ActionLink("Add Single record", "Create")
+                </p>
+                @using (Html.BeginForm("Upload", "FileUpload", FormMethod.Post, new { enctype = "multipart/form-data", id = "uploadForm" }))
+                {
+                    <input type="file" id="fileUpload" name="file" accept=".xlsx, .xls" />
+                    <button type="button" id="LoadExcel" >Load Excel</button>
+                    <input type="submit" value="Upload" />
+                }
+                <hr />
+                <div id="excelTableContainer"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<table class="table" id="customers">
+    <tr>
+        <th>@Html.DisplayNameFor(model => model.ICCID_1)</th>
+        <th>@Html.DisplayNameFor(model => model.ICCID_2)</th>
+        <th>@Html.DisplayNameFor(model => model.ICCID_1_Network)</th>
+        <th>@Html.DisplayNameFor(model => model.ICCID_2_Network)</th>
+        <th>@Html.DisplayNameFor(model => model.IMSI_1)</th>
+        <th>@Html.DisplayNameFor(model => model.IMSI_2)</th>
+        <th>@Html.DisplayNameFor(model => model.MSISDN_1)</th>
+        <th>@Html.DisplayNameFor(model => model.MSISDN_2)</th>
+        <th>@Html.DisplayNameFor(model => model.ESN)</th>
+        <th>@Html.DisplayNameFor(model => model.BootstrapActivationStartDate)</th>
+        <th>@Html.DisplayNameFor(model => model.BootstrapActivationEndDate)</th>
+        <th>@Html.DisplayNameFor(model => model.AllocatedToInHouseDate)</th>
+        <th>@Html.DisplayNameFor(model => model.APN_Name)</th>
+        <th>@Html.DisplayNameFor(model => model.IP_1)</th>
+        <th>@Html.DisplayNameFor(model => model.IP_2)</th>
+        <th>@Html.DisplayNameFor(model => model.IP_3)</th>
+        <th>@Html.DisplayNameFor(model => model.IP_4)</th>
+        <th>@Html.DisplayNameFor(model => model.MN_1)</th>
+        <th>@Html.DisplayNameFor(model => model.MN_2)</th>
+        <th>@Html.DisplayNameFor(model => model.MN_3)</th>
+        <th>@Html.DisplayNameFor(model => model.MN_4)</th>
+        <th>@Html.DisplayNameFor(model => model.IMEI)</th>
+        <th>@Html.DisplayNameFor(model => model.For_User)</th>
+        <th>@Html.DisplayNameFor(model => model.For_State)</th>
+        <th>@Html.DisplayNameFor(model => model.Dispatch_Date)</th>
+        <th>@Html.DisplayNameFor(model => model.Dispatch_Location)</th>
+        <th></th><th></th><th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@Html.DisplayFor(modelItem => item.ICCID_1)</td>
+            <td>@Html.DisplayFor(modelItem => item.ICCID_2)</td>
+            <td>@Html.DisplayFor(modelItem => item.ICCID_1_Network)</td>
+            <td>@Html.DisplayFor(modelItem => item.ICCID_2_Network)</td>
+            <td>@Html.DisplayFor(modelItem => item.IMSI_1)</td>
+            <td>@Html.DisplayFor(modelItem => item.IMSI_2)</td>
+            <td>@Html.DisplayFor(modelItem => item.MSISDN_1)</td>
+            <td>@Html.DisplayFor(modelItem => item.MSISDN_2)</td>
+            <td>@Html.DisplayFor(modelItem => item.ESN)</td>
+            <td>@Html.DisplayFor(modelItem => item.BootstrapActivationStartDate)</td>
+            <td>@Html.DisplayFor(modelItem => item.BootstrapActivationEndDate)</td>
+            <td>@Html.DisplayFor(modelItem => item.AllocatedToInHouseDate)</td>
+            <td>@Html.DisplayFor(modelItem => item.APN_Name)</td>
+            <td>@Html.DisplayFor(modelItem => item.IP_1)</td>
+            <td>@Html.DisplayFor(modelItem => item.IP_2)</td>
+            <td>@Html.DisplayFor(modelItem => item.IP_3)</td>
+            <td>@Html.DisplayFor(modelItem => item.IP_4)</td>
+            <td>@Html.DisplayFor(modelItem => item.MN_1)</td>
+            <td>@Html.DisplayFor(modelItem => item.MN_2)</td>
+            <td>@Html.DisplayFor(modelItem => item.MN_3)</td>
+            <td>@Html.DisplayFor(modelItem => item.MN_4)</td>
+            <td>@Html.DisplayFor(modelItem => item.IMEI)</td>
+            <td>@Html.DisplayFor(modelItem => item.For_User)</td>
+            <td>@Html.DisplayFor(modelItem => item.For_State)</td>
+            <td>@Html.DisplayFor(modelItem => item.Dispatch_Date)</td>
+            <td>@Html.DisplayFor(modelItem => item.Dispatch_Location)</td>
+            <td>
+                <button>
+                    @Html.ActionLink("Edit", "Edit", new { id = item.ICCID_1 })
+                </button>
+            <td>
+                <button>
+                    @Html.ActionLink("Details", "Details", new { id = item.ICCID_1 })
+                </button>
+            </td>
+            <td>
+                <button>
+                    @Html.ActionLink("Delete", "Delete", new { id = item.ICCID_1 })
+                </button>
+            </td>
+            
+        </tr>
+    }
+</table>
+
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var fileInput = document.getElementById('fileUpload');
+        var LoadButton = document.getElementById('LoadExcel');
+        var excelTableContainer = document.getElementById('excelTableContainer');
+
+        LoadButton.addEventListener('click', function () {
+            var file = fileInput.files[0];
+            if (file) {
+                var reader = new FileReader();
+                reader.onload = function (e) {
+                    var data = new Uint8Array(e.target.result);
+                    var workbook = XLSX.read(data, { type: 'array' });
+                    var firstSheetName = workbook.SheetNames[0];
+                    var worksheet = workbook.Sheets[firstSheetName];
+                    var html = XLSX.utils.sheet_to_html(worksheet);
+                    excelTableContainer.innerHTML = html;
+                };
+                reader.readAsArrayBuffer(file);
+            } else {
+                alert('Please select a file first.');
+            }
+        });
+    });
+</script>

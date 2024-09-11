@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ERP_LocalModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Internal_Sims_Activations">
+    <Key>
+      <PropertyRef Name="ICCID_1" />
+    </Key>
+    <Property Name="ICCID_1" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="ICCID_2" Type="varchar" MaxLength="20" />
+    <Property Name="ICCID_1_Network" Type="varchar" MaxLength="255" />
+    <Property Name="ICCID_2_Network" Type="varchar" MaxLength="255" />
+    <Property Name="IMSI_1" Type="bigint" />
+    <Property Name="IMSI_2" Type="bigint" />
+    <Property Name="MSISDN_1" Type="bigint" />
+    <Property Name="MSISDN_2" Type="bigint" />
+    <Property Name="ESN" Type="varchar" MaxLength="255" />
+    <Property Name="BootstrapActivationStartDate" Type="date" />
+    <Property Name="BootstrapActivationEndDate" Type="date" />
+    <Property Name="AllocatedToInHouseDate" Type="date" />
+    <Property Name="APN_Name" Type="varchar" MaxLength="255" />
+    <Property Name="IP_1" Type="varchar" MaxLength="45" />
+    <Property Name="IP_2" Type="varchar" MaxLength="45" />
+    <Property Name="IP_3" Type="varchar" MaxLength="45" />
+    <Property Name="IP_4" Type="varchar" MaxLength="45" />
+    <Property Name="MN_1" Type="varchar" MaxLength="255" />
+    <Property Name="MN_2" Type="varchar" MaxLength="255" />
+    <Property Name="MN_3" Type="varchar" MaxLength="255" />
+    <Property Name="MN_4" Type="varchar" MaxLength="255" />
+    <Property Name="IMEI" Type="varchar" MaxLength="255" />
+    <Property Name="For_User" Type="varchar" MaxLength="255" />
+    <Property Name="For_State" Type="varchar" MaxLength="255" />
+    <Property Name="Dispatch_Date" Type="date" />
+    <Property Name="Dispatch_Location" Type="varchar" MaxLength="255" />
+    <Property Name="Remarks" Type="varchar" MaxLength="255" />
+  </EntityType>
+  <EntityContainer Name="ERP_LocalModelStoreContainer">
+    <EntitySet Name="Internal_Sims_Activations" EntityType="Self.Internal_Sims_Activations" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>
