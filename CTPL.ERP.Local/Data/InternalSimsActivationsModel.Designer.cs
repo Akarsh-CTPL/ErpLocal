@@ -1,4 +1,4 @@
-﻿// T4 code generation is enabled for model 'D:\Dot Net Office Project\CTPL.ERP.Local\CTPL.ERP.Local\CTPL.ERP.Local\Data\InternalSimsActivationsModel.edmx'. 
+﻿// T4 code generation is enabled for model 'D:\ERP\ERP_UploadExcel_MVC\CTPL.ERP.Local\ErpLocal\CTPL.ERP.Local\Data\InternalSimsActivationsModel.edmx'. 
 // To enable legacy code generation, change the value of the 'Code Generation Strategy' designer
 // property to 'Legacy ObjectContext'. This property is available in the Properties Window when the model
 // is open in the designer.

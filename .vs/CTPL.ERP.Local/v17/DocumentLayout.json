@@ -1,14 +1,22 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\Dot Net Office Project\\CTPL.ERP.Local\\CTPL.ERP.Local\\",
+  "WorkspaceRootPath": "D:\\ERP\\ERP_UploadExcel_MVC\\CTPL.ERP.Local\\ErpLocal\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0033AC46-0E42-4F41-B63A-4BFB96F55BAD}|CTPL.ERP.Local\\CTPL.ERP.Local.csproj|d:\\dot net office project\\ctpl.erp.local\\ctpl.erp.local\\ctpl.erp.local\\views\\internalsimsactivations\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{0033AC46-0E42-4F41-B63A-4BFB96F55BAD}|CTPL.ERP.Local\\CTPL.ERP.Local.csproj|solutionrelative:ctpl.erp.local\\views\\internalsimsactivations\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{0033AC46-0E42-4F41-B63A-4BFB96F55BAD}|CTPL.ERP.Local\\CTPL.ERP.Local.csproj|d:\\erp\\erp_uploadexcel_mvc\\ctpl.erp.local\\erplocal\\ctpl.erp.local\\data\\internalsimsactivationsmodel.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|",
+      "RelativeMoniker": "D:0:0:{0033AC46-0E42-4F41-B63A-4BFB96F55BAD}|CTPL.ERP.Local\\CTPL.ERP.Local.csproj|solutionrelative:ctpl.erp.local\\data\\internalsimsactivationsmodel.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0033AC46-0E42-4F41-B63A-4BFB96F55BAD}|CTPL.ERP.Local\\CTPL.ERP.Local.csproj|D:\\Dot Net Office Project\\CTPL.ERP.Local\\CTPL.ERP.Local\\ctpl.erp.local\\controllers\\internalsimsactivationscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{0033AC46-0E42-4F41-B63A-4BFB96F55BAD}|CTPL.ERP.Local\\CTPL.ERP.Local.csproj|D:\\ERP\\ERP_UploadExcel_MVC\\CTPL.ERP.Local\\ErpLocal\\ctpl.erp.local\\controllers\\internalsimsactivationscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0033AC46-0E42-4F41-B63A-4BFB96F55BAD}|CTPL.ERP.Local\\CTPL.ERP.Local.csproj|solutionrelative:ctpl.erp.local\\controllers\\internalsimsactivationscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0033AC46-0E42-4F41-B63A-4BFB96F55BAD}|CTPL.ERP.Local\\CTPL.ERP.Local.csproj|d:\\erp\\erp_uploadexcel_mvc\\ctpl.erp.local\\erplocal\\ctpl.erp.local\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{0033AC46-0E42-4F41-B63A-4BFB96F55BAD}|CTPL.ERP.Local\\CTPL.ERP.Local.csproj|solutionrelative:ctpl.erp.local\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0033AC46-0E42-4F41-B63A-4BFB96F55BAD}|CTPL.ERP.Local\\CTPL.ERP.Local.csproj|d:\\erp\\erp_uploadexcel_mvc\\ctpl.erp.local\\erplocal\\ctpl.erp.local\\views\\internalsimsactivations\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0033AC46-0E42-4F41-B63A-4BFB96F55BAD}|CTPL.ERP.Local\\CTPL.ERP.Local.csproj|solutionrelative:ctpl.erp.local\\views\\internalsimsactivations\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,29 +26,55 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "InternalSimsActivationsModel.edmx [Diagram1]",
+              "DocumentMoniker": "D:\\ERP\\ERP_UploadExcel_MVC\\CTPL.ERP.Local\\ErpLocal\\CTPL.ERP.Local\\Data\\InternalSimsActivationsModel.edmx",
+              "RelativeDocumentMoniker": "CTPL.ERP.Local\\Data\\InternalSimsActivationsModel.edmx",
+              "ToolTip": "D:\\ERP\\ERP_UploadExcel_MVC\\CTPL.ERP.Local\\ErpLocal\\CTPL.ERP.Local\\Data\\InternalSimsActivationsModel.edmx [Diagram1]*",
+              "RelativeToolTip": "CTPL.ERP.Local\\Data\\InternalSimsActivationsModel.edmx [Diagram1]*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001116|",
+              "WhenOpened": "2024-09-11T06:05:22.071Z",
+              "EditorCaption": " [Diagram1]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Web.config",
+              "DocumentMoniker": "D:\\ERP\\ERP_UploadExcel_MVC\\CTPL.ERP.Local\\ErpLocal\\CTPL.ERP.Local\\Web.config",
+              "RelativeDocumentMoniker": "CTPL.ERP.Local\\Web.config",
+              "ToolTip": "D:\\ERP\\ERP_UploadExcel_MVC\\CTPL.ERP.Local\\ErpLocal\\CTPL.ERP.Local\\Web.config",
+              "RelativeToolTip": "CTPL.ERP.Local\\Web.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEoAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2024-09-11T06:01:50.983Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "InternalSimsActivationsController.cs",
-              "DocumentMoniker": "D:\\Dot Net Office Project\\CTPL.ERP.Local\\CTPL.ERP.Local\\CTPL.ERP.Local\\Controllers\\InternalSimsActivationsController.cs",
+              "DocumentMoniker": "D:\\ERP\\ERP_UploadExcel_MVC\\CTPL.ERP.Local\\ErpLocal\\CTPL.ERP.Local\\Controllers\\InternalSimsActivationsController.cs",
               "RelativeDocumentMoniker": "CTPL.ERP.Local\\Controllers\\InternalSimsActivationsController.cs",
-              "ToolTip": "D:\\Dot Net Office Project\\CTPL.ERP.Local\\CTPL.ERP.Local\\CTPL.ERP.Local\\Controllers\\InternalSimsActivationsController.cs",
+              "ToolTip": "D:\\ERP\\ERP_UploadExcel_MVC\\CTPL.ERP.Local\\ErpLocal\\CTPL.ERP.Local\\Controllers\\InternalSimsActivationsController.cs",
               "RelativeToolTip": "CTPL.ERP.Local\\Controllers\\InternalSimsActivationsController.cs",
-              "ViewState": "AgIAAAsBAAAAAAAAAAAYwBgAAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAAKIAAAAAAAAAAAArwLEAAABVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-09T08:31:27.836Z"
+              "WhenOpened": "2024-09-09T08:31:27.836Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\Dot Net Office Project\\CTPL.ERP.Local\\CTPL.ERP.Local\\CTPL.ERP.Local\\Views\\InternalSimsActivations\\Index.cshtml",
+              "DocumentMoniker": "D:\\ERP\\ERP_UploadExcel_MVC\\CTPL.ERP.Local\\ErpLocal\\CTPL.ERP.Local\\Views\\InternalSimsActivations\\Index.cshtml",
               "RelativeDocumentMoniker": "CTPL.ERP.Local\\Views\\InternalSimsActivations\\Index.cshtml",
-              "ToolTip": "D:\\Dot Net Office Project\\CTPL.ERP.Local\\CTPL.ERP.Local\\CTPL.ERP.Local\\Views\\InternalSimsActivations\\Index.cshtml",
+              "ToolTip": "D:\\ERP\\ERP_UploadExcel_MVC\\CTPL.ERP.Local\\ErpLocal\\CTPL.ERP.Local\\Views\\InternalSimsActivations\\Index.cshtml",
               "RelativeToolTip": "CTPL.ERP.Local\\Views\\InternalSimsActivations\\Index.cshtml",
-              "ViewState": "AgIAABUAAAAAAAAAAAAAACYAAAAdAAAAAAAAAA==",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAACYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-09-09T08:33:44.81Z",
               "EditorCaption": ""

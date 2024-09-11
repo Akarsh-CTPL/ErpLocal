@@ -1,13 +1,13 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\Dot Net Office Project\\CTPL.ERP.Local\\CTPL.ERP.Local\\",
+  "WorkspaceRootPath": "D:\\ERP\\ERP_UploadExcel_MVC\\CTPL.ERP.Local\\ErpLocal\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0033AC46-0E42-4F41-B63A-4BFB96F55BAD}|CTPL.ERP.Local\\CTPL.ERP.Local.csproj|d:\\dot net office project\\ctpl.erp.local\\ctpl.erp.local\\ctpl.erp.local\\views\\internalsimsactivations\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{0033AC46-0E42-4F41-B63A-4BFB96F55BAD}|CTPL.ERP.Local\\CTPL.ERP.Local.csproj|d:\\erp\\erp_uploadexcel_mvc\\ctpl.erp.local\\erplocal\\ctpl.erp.local\\views\\internalsimsactivations\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{0033AC46-0E42-4F41-B63A-4BFB96F55BAD}|CTPL.ERP.Local\\CTPL.ERP.Local.csproj|solutionrelative:ctpl.erp.local\\views\\internalsimsactivations\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0033AC46-0E42-4F41-B63A-4BFB96F55BAD}|CTPL.ERP.Local\\CTPL.ERP.Local.csproj|D:\\Dot Net Office Project\\CTPL.ERP.Local\\CTPL.ERP.Local\\ctpl.erp.local\\controllers\\internalsimsactivationscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{0033AC46-0E42-4F41-B63A-4BFB96F55BAD}|CTPL.ERP.Local\\CTPL.ERP.Local.csproj|D:\\ERP\\ERP_UploadExcel_MVC\\CTPL.ERP.Local\\ErpLocal\\ctpl.erp.local\\controllers\\internalsimsactivationscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0033AC46-0E42-4F41-B63A-4BFB96F55BAD}|CTPL.ERP.Local\\CTPL.ERP.Local.csproj|solutionrelative:ctpl.erp.local\\controllers\\internalsimsactivationscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -24,9 +24,9 @@
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "InternalSimsActivationsController.cs",
-              "DocumentMoniker": "D:\\Dot Net Office Project\\CTPL.ERP.Local\\CTPL.ERP.Local\\CTPL.ERP.Local\\Controllers\\InternalSimsActivationsController.cs",
+              "DocumentMoniker": "D:\\ERP\\ERP_UploadExcel_MVC\\CTPL.ERP.Local\\ErpLocal\\CTPL.ERP.Local\\Controllers\\InternalSimsActivationsController.cs",
               "RelativeDocumentMoniker": "CTPL.ERP.Local\\Controllers\\InternalSimsActivationsController.cs",
-              "ToolTip": "D:\\Dot Net Office Project\\CTPL.ERP.Local\\CTPL.ERP.Local\\CTPL.ERP.Local\\Controllers\\InternalSimsActivationsController.cs",
+              "ToolTip": "D:\\ERP\\ERP_UploadExcel_MVC\\CTPL.ERP.Local\\ErpLocal\\CTPL.ERP.Local\\Controllers\\InternalSimsActivationsController.cs",
               "RelativeToolTip": "CTPL.ERP.Local\\Controllers\\InternalSimsActivationsController.cs",
               "ViewState": "AgIAAAsBAAAAAAAAAAAYwBgAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -36,11 +36,11 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\Dot Net Office Project\\CTPL.ERP.Local\\CTPL.ERP.Local\\CTPL.ERP.Local\\Views\\InternalSimsActivations\\Index.cshtml",
+              "DocumentMoniker": "D:\\ERP\\ERP_UploadExcel_MVC\\CTPL.ERP.Local\\ErpLocal\\CTPL.ERP.Local\\Views\\InternalSimsActivations\\Index.cshtml",
               "RelativeDocumentMoniker": "CTPL.ERP.Local\\Views\\InternalSimsActivations\\Index.cshtml",
-              "ToolTip": "D:\\Dot Net Office Project\\CTPL.ERP.Local\\CTPL.ERP.Local\\CTPL.ERP.Local\\Views\\InternalSimsActivations\\Index.cshtml",
-              "RelativeToolTip": "CTPL.ERP.Local\\Views\\InternalSimsActivations\\Index.cshtml",
-              "ViewState": "AgIAAIMAAAAAAAAAAAAswJMAAAAjAAAAAAAAAA==",
+              "ToolTip": "D:\\ERP\\ERP_UploadExcel_MVC\\CTPL.ERP.Local\\ErpLocal\\CTPL.ERP.Local\\Views\\InternalSimsActivations\\Index.cshtml*",
+              "RelativeToolTip": "CTPL.ERP.Local\\Views\\InternalSimsActivations\\Index.cshtml*",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAACYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-09-09T08:33:44.81Z",
               "EditorCaption": ""

@@ -4,7 +4,7 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="4a807615bc004e49998299af0805cc2f" Name="Diagram1" ZoomLevel="80">
+      <Diagram DiagramId="be0bcb22a59247fabed91e2691dc75cc" Name="Diagram1" ZoomLevel="86">
         <EntityTypeShape EntityType="ERP_LocalModel.Internal_Sims_Activations" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
       </Diagram>
     </edmx:Diagrams>
